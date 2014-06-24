@@ -34,7 +34,7 @@ RoadMap:
 
 Далее мы реализуем остальные разделы.
 
-Обсуждение происходит в чате <a href="skype:?chat&blob=by0nKWoqWvLlUcx8Vgz7OzbZDzvRiLaW2O_L-eBBUKBEi16AR99wQGFGyuc0psUFDNaJuA04MIedSliYQL4x_8GSUPQZ-D8yaYLwV3t1wo5u3f5U674pF3hc-5lYNvRxKmkR3By9FzuVEUZMtiSvDhWI7dNsEIYd5GwSBul7QStQusT2JE90_NomkHMx5V36Kw7cnUdANjAKQtFFaS_2mEeFLzc">Node.JS (Skype)</a>
+Обсуждение происходит в чате <a href="http://bit.ly/nodejs-ua">Node.JS (Skype)</a>
 
 Если не можете войти - напишите мне в Skype, ник: "ilya.a.kantor".
 
