@@ -34,5 +34,9 @@ RoadMap:
 
 Далее мы реализуем остальные разделы.
 
+Обсуждение происходит в чате skype:?chat&blob=by0nKWoqWvLlUcx8Vgz7OzbZDzvRiLaW2O_L-eBBUKBEi16AR99wQGFGyuc0psUFDNaJuA04MIedSliYQL4x_8GSUPQZ-D8yaYLwV3t1wo5u3f5U674pF3hc-5lYNvRxKmkR3By9FzuVEUZMtiSvDhWI7dNsEIYd5GwSBul7QStQusT2JE90_NomkHMx5V36Kw7cnUdANjAKQtFFaS_2mEeFLzc
+
+Если не можете войти - напишите мне в Skype, ник ilya.a.kantor
+
 
 
