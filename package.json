@@ -21,7 +21,9 @@
     "morgan": "*",
     "passport": "*",
     "static-favicon": "*",
-    "winston": "*"
+    "winston": "*",
+    "bootable": "~0.2.3",
+    "bootable-environment": "~0.2.0"
   },
   "devDependencies": {
     "javascript-brunch": "*",
