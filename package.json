@@ -1,0 +1,44 @@
+{
+  "name": "javascript-nodejs",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "NODE_ENV=production NODE_PATH=. node ./bin/www",
+    "dev": "NODE_ENV=development DEBUG=server:* NODE_PATH=. supervisor --debug --ignore node_modules app.js",
+    "test": "NODE_ENV=test DEBUG=server:* NODE_PATH=. supervisor --debug --ignore node_modules app.js"
+  },
+  "dependencies": {
+    "async": "*",
+    "body-parser": "*",
+    "connect-mongo": "*",
+    "cookie-parser": "*",
+    "debug": "*",
+    "express": "*",
+    "express-session": "*",
+    "jade": "*",
+    "lodash": "*",
+    "mongoose": "^3.8.12",
+    "morgan": "*",
+    "passport": "*",
+    "static-favicon": "*",
+    "winston": "*"
+  },
+  "devDependencies": {
+    "javascript-brunch": "*",
+    "css-brunch": "*",
+    "uglify-js-brunch": "*",
+    "clean-css-brunch": "*",
+    "stylus-brunch": "*",
+    "autoprefixer-brunch": "*",
+    "supervisor": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iliakan/javascript-nodejs.git"
+  },
+  "author": "Ilya Kantor and other contributors listed in git repo",
+  "license": "CC BY-NC-SA 3.0",
+  "bugs": {
+    "url": "https://github.com/iliakan/javascript-nodejs/issues"
+  }
+}
