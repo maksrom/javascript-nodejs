@@ -20,7 +20,5 @@ var app = module.exports = bootable(express());
  */
 app.phase(bootable.initializers('./models', app));
 app.phase(bootable.initializers('./setup', app));
-app.phase(bootable.routes('routes/', app));
-
 
 module.exports = app;
