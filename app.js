@@ -3,12 +3,11 @@
 /**
  * Module dependencies.
  */
-var log                      = require('lib/log')(module);
-var config                   = require('config');
+var log = require('lib/log')(module);
+var config = require('config');
 
-var express                  = require('express');
-var bootable                 = require('bootable');
-    bootable.environments    = require('bootable-environment');
+var express = require('express');
+var bootable = require('bootable');
 
 // End of dependencies.
 

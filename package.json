@@ -10,20 +10,22 @@
   "dependencies": {
     "async": "*",
     "body-parser": "*",
+    "bootable": "~0.2.3",
+    "bootable-environment": "~0.2.0",
     "connect-mongo": "*",
     "cookie-parser": "*",
     "debug": "*",
+    "errorhandler": "^1.1.1",
     "express": "*",
     "express-session": "*",
     "jade": "*",
+    "jsdom": "^0.11.0",
     "lodash": "*",
     "mongoose": "^3.8.12",
     "morgan": "*",
     "passport": "*",
     "static-favicon": "*",
-    "winston": "*",
-    "bootable": "~0.2.3",
-    "bootable-environment": "~0.2.0"
+    "winston": "*"
   },
   "devDependencies": {
     "javascript-brunch": "*",

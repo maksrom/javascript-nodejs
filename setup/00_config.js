@@ -20,6 +20,9 @@ var log                 = require('../lib/log')(module);
 // end of dependencies.
 
 
-module.exports = function (/*done*/) {
-  // ???
+module.exports = function () {
+  // this = application
+
+  // this function is an example
+  // we don't do anything with config here, but ensure that it exists and works
 };

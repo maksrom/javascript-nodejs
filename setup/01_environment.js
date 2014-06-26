@@ -29,7 +29,7 @@ var mongoose            = require('mongoose');
 // end of dependencies.
 
 
-module.exports = function (done) {
+module.exports = function() {
   this.set('views', cwd + '/views');
   this.set('view engine', 'jade');
   this.use(express.static(cwd + '/www'));
@@ -38,17 +38,13 @@ module.exports = function (done) {
     immediate: true,
     format: config.log.format
   }));
-  // TODO: узнать, почему бы тут не написать просто bodyParser() ?
-  this.use(bodyParser.json());
-  this.use(bodyParser.urlencoded());
+  this.use(bodyParser());
   this.use(cookieParser());
   this.use(session({
     secret: config.session.secret,
     key: config.session.key,
     cookie: config.session.cookie,
-    store: sessionStore
+    store: sessionStore,
+    saveUninitialized: false
   }));
-  // this.use(passport.initialize());
-  // this.use(passport.session());
-  done();
 };

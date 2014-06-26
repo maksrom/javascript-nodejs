@@ -39,4 +39,8 @@ RoadMap:
 
 Если не можете войти - напишите мне в Skype, ник: "ilya.a.kantor".
 
+Code Style:
+  * https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml
+  * `use strict` 
+
 
