@@ -5,14 +5,13 @@
  */
 var log = require('lib/log')(module);
 var config = require('config');
+var express = require('express');
 var router = express.Router();
 
 // End of dependencies.
 
-
 module.exports = function() {
-
-  router.get('/', function(req, res) {
+  this.get('/', function(req, res) {
     res.send('respond with a resource');
   });
 };

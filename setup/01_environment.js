@@ -9,23 +9,23 @@
 // previous one has completed before the next one executes.
 
 'use strict';
- 
+
 /**
  * Module dependencies.
  */
-var config              = require('config');
-var log                 = require('lib/log')(module);
+var config = require('config');
+var log = require('lib/log')(module);
 
-var express             = require('express');
-var cwd                 = process.cwd();
-var favicon             = require('static-favicon');
-var morgan              = require('morgan');
-var bodyParser          = require('body-parser');
-var cookieParser        = require('cookie-parser');
-var session             = require('express-session');
-var sessionStore        = require('lib/sessionStore');
-var mongoose            = require('mongoose');
-
+var express = require('express');
+var cwd = process.cwd();
+var favicon = require('static-favicon');
+var morgan = require('morgan');
+var bodyParser = require('body-parser');
+var cookieParser = require('cookie-parser');
+var session = require('express-session');
+var sessionStore = require('lib/sessionStore');
+var mongoose = require('mongoose');
+var sendHttpError = require('lib/middleware/sendHttpError');
 // end of dependencies.
 
 
@@ -40,6 +40,7 @@ module.exports = function() {
   }));
   this.use(bodyParser());
   this.use(cookieParser());
+  this.use(sendHttpError);
   this.use(session({
     secret: config.session.secret,
     key: config.session.key,
