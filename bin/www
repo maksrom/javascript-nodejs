@@ -3,16 +3,8 @@
 
 var app = require('app');
 var log = require('lib/log')(module);
+var config = require('config');
 
-
-app.set('port', process.env.PORT || 3000);
-// При деплое на некоторых хостингах кроме порта нужно слушать еще и хост
-app.set('host', process.env.HOST || '0.0.0.0');
-
-
-app.boot(function(err) {
-  if (err) { throw err; }
-  app.listen(app.get('port'), app.get('host'), function() {
-    log.info('Express listen %s:%d', app.get('host'), app.get('port'));
-  });
+app.listen(config.port, config.host, function() {
+  log.info('App listen %s:%d', config.host, config.port);
 });

@@ -1,6 +1,7 @@
 module.exports = function() {
   return {
-    "port": 3000,
+    "port": process.env.PORT || 3000,
+    "host": process.env.HOST || '0.0.0.0',
     "mongoose": {
       "uri": "mongodb://localhost/javascript",
       "options": {
@@ -13,16 +14,14 @@ module.exports = function() {
       }
     },
     "session": {
-      "secret": "KillerIsJim",
-      "key": "sid",
-      "cookie": {
-        "path": "/",
-        "httpOnly": true,
-        "maxAge": null
-      }
+      "keys": ["KillerIsJim"]
     },
-    "log": {
-      "format": "default"
+    template: {
+      path: process.cwd() + '/views',
+      options: {
+        'default': 'jade',
+        'cache': true
+      }
     }
   }
 };

@@ -3,28 +3,26 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "NODE_ENV=production NODE_PATH=. node ./bin/www",
-    "dev": "NODE_ENV=development DEBUG=server:* NODE_PATH=. supervisor --debug --ignore node_modules ./bin/www",
-    "test": "NODE_ENV=test DEBUG=server:* NODE_PATH=. supervisor --debug --ignore node_modules ./bin/www"
+    "start": "NODE_ENV=production NODE_PATH=. node --harmony --harmony_generators ./bin/www",
+    "dev": "NODE_ENV=development DEBUG=server:* NODE_PATH=. supervisor --harmony --debug --ignore node_modules ./bin/www",
+    "test": "NODE_ENV=test DEBUG=server:* NODE_PATH=. supervisor --harmony --debug --ignore node_modules ./bin/www"
   },
   "dependencies": {
-    "async": "*",
     "body-parser": "*",
-    "bootable": "~0.2.3",
-    "bootable-environment": "~0.2.0",
-    "connect-mongo": "*",
-    "cookie-parser": "*",
-    "debug": "*",
-    "errorhandler": "^1.1.1",
-    "express": "*",
-    "express-session": "*",
+    "co": "*",
+    "koa-views": "*",
     "jade": "*",
-    "jsdom": "^0.11.0",
+    "koa": "*",
+    "koa-bodyparser": "*",
+    "koa-favicon": "*",
+    "koa-logger": "*",
+    "koa-router": "*",
+    "koa-sess": "*",
+    "koa-session-mongoose": "*",
+    "koa-static": "*",
     "lodash": "*",
-    "mongoose": "^3.8.12",
-    "morgan": "*",
+    "mongoose": "*",
     "passport": "*",
-    "static-favicon": "*",
     "winston": "*"
   },
   "devDependencies": {
@@ -36,6 +34,10 @@
     "autoprefixer-brunch": "*",
     "supervisor": "*"
   },
+  "engines": {
+    "node" : "0.11.12"
+  },
+  "engineStrict": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/iliakan/javascript-nodejs.git"

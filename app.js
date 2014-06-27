@@ -1,24 +1,24 @@
-'use strict';
+"use strict";
 
-/**
- * Module dependencies.
- */
-var log = require('lib/log')(module);
-var config = require('config');
+const log = require('lib/log')(module);
+const config = require('config');
 
-var express = require('express');
-var bootable = require('bootable');
+const koa = require('koa');
 
-// End of dependencies.
+require('models');
 
+const app = koa();
 
-var app = module.exports = bootable(express());
+require('setup/static')(app);
 
+require('setup/errors')(app);
 
-/**
- * syntax: bootable.initializers('folder', context);
- */
-app.phase(bootable.initializers('./models', app));
-app.phase(bootable.initializers('./setup', app));
+require('setup/logger')(app);
+require('setup/bodyParser')(app);
+require('setup/session')(app);
+require('setup/render')(app);
+require('setup/router')(app);
+
+require('./routes')(app);
 
 module.exports = app;
